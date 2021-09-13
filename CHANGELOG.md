@@ -1,3 +1,15 @@
+# v1.0.2 (Mon Sep 13 2021)
+
+#### ⚠️ Pushed to `main`
+
+- try change addon id plus match ([@din-sap](https://github.com/din-sap))
+
+#### Authors: 1
+
+- [@din-sap](https://github.com/din-sap)
+
+---
+
 # v0.0.2 (Mon Sep 13 2021)
 
 #### ⚠️ Pushed to `main`
