@@ -10,5 +10,6 @@
  */
 import { withGlobals } from "../withGlobals";
 import { withRoundTrip } from "../withRoundTrip";
+import {withXstateInspector} from "../withXstateInspector";
 
-export const decorators = [withGlobals, withRoundTrip];
+export const decorators = [withGlobals, withRoundTrip, withXstateInspector];

@@ -21,27 +21,8 @@ interface TabContentProps {
 
 export const TabContent: React.FC<TabContentProps> = ({ code }) => (
   <TabWrapper>
-    <TabInner>
-      <Title>My Addon</Title>
-      <p>
-        Your addon can create a custom tab in Storybook. For example, the
-        official{" "}
-        <Link href="https://storybook.js.org/docs/react/writing-docs/introduction">
-          @storybook/addon-docs
-        </Link>{" "}
-        uses this pattern.
-      </p>
-      <p>
-        You have full control over what content is being rendered here. You can
-        use components from{" "}
-        <Link href="https://github.com/storybookjs/storybook/tree/master/lib/components">
-          @storybook/components
-        </Link>{" "}
-        to match the look and feel of Storybook, for example the{" "}
-        <code>&lt;Source /&gt;</code> component below. Or build a completely
-        custom UI.
-      </p>
-      <Source code={code} language="jsx" format={false} />
+    <TabInner> 
+      <Source code={code} language="json" format={false} />
     </TabInner>
   </TabWrapper>
 );
