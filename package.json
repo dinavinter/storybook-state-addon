@@ -1,17 +1,18 @@
 {
-  "name": "storybook-addon-kit",
+  "name": "storybook-xstate-wc",
   "version": "0.0.0",
-  "description": "everything you need to build a Storybook addon",
+  "description": "storybook for xstate (without xstate/react)",
   "keywords": [
     "storybook-addons",
     "style",
-    "test"
+    "test",
+    "xstate"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook-addon-kit"
+    "url": "https://github.com/dinavinter/storybook-state-addon"
   },
-  "author": "winkerVSbecks",
+  "author": "dinaVinter",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -61,11 +62,11 @@
     "zx": "^1.14.1"
   },
   "peerDependencies": {
-    "@storybook/addons": "^6.3.6",
-    "@storybook/api": "^6.3.6",
-    "@storybook/components": "^6.3.6",
-    "@storybook/core-events": "^6.3.6",
-    "@storybook/theming": "^6.3.6",
+    "@storybook/addons": "^6.3.8",
+    "@storybook/api": "^6.3.8",
+    "@storybook/components": "^6.3.8",
+    "@storybook/core-events": "^6.3.8",
+    "@storybook/theming": "^6.3.8",
     "react": "^16.8.0 || ^17.0.0",
     "react-dom": "^16.8.0 || ^17.0.0"
   },
@@ -81,11 +82,12 @@
     "access": "public"
   },
   "storybook": {
-    "displayName": "Addon Kit",
+    "displayName": "XState Addon for @Storybook/web-components",
     "supportedFrameworks": [
       "react",
       "vue",
-      "angular"
+      "angular",
+      "web-components"
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   }
