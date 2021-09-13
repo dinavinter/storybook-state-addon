@@ -1,7 +1,7 @@
 {
   "name": "storybook-xstate-wc",
-  "version": "0.0.0",
-  "description": "storybook for xstate (without xstate/react)",
+  "version": "0.0.0-preview",
+  "description": " xstate addons for storybook/web-components (without dependency on @xstate/react)",
   "keywords": [
     "storybook-addons",
     "style",
