@@ -36,8 +36,7 @@ function displayToolState(selector: string, state: any) {
     rootElement.appendChild(preElement);
   }
 
-  preElement.innerText = `This snippet is injected by the withGlobals decorator.
-It updates as the user interacts with the ⚡ tool in the toolbar above xxxx.
+  preElement.innerText = `Use  ⚡ tool in the toolbar to enable or disable xstate xoxo.
 
 ${JSON.stringify(state, null, 2)}
 `;

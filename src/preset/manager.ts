@@ -1,12 +1,8 @@
-import {addons, types} from "@storybook/addons";
-
+import {addons, types} from "@storybook/addons"; 
 import {ADDON_ID, TOOL_ID, PANEL_ID} from "../constants";
 import {Tool} from "../Tool";
 import {Panel} from "../Panel";
 import {Tab} from "../Tab";
-import {AddonPanel} from "@storybook/components";
-import {XStateInspectorPanel} from "../InspectorPanel";
-import React from "react";
 
 // Register the addon
 addons.register(ADDON_ID, () => {
@@ -42,12 +38,9 @@ addons.register(ADDON_ID, () => {
         type: types.PANEL,
         title: "xState Inspector",
         paramKey: "xstate",
-        render: ({active, key}) => (
-            <AddonPanel active={!!active} key={key}>
-                <XStateInspectorPanel/>
-            </AddonPanel>
-        ),
-    });
+        render: Panel }
+        ) ;
+   
 
 
 });
