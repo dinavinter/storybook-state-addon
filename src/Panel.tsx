@@ -4,7 +4,7 @@ import { AddonPanel } from "@storybook/components";
 import { ADDON_ID, EVENTS, PARAM_KEY } from "./constants";
 import { PanelContent } from "./components/PanelContent";
 import { useParameter } from '@storybook/api';
-import {XStateInspectorPanel} from "./InspectorPanel";
+import {XStateInspectorPanel} from "./components/InspectorPanel";
 
 interface PanelProps {
   active: boolean;
@@ -26,14 +26,7 @@ const emit = useChannel({
 });
   return (
     <AddonPanel {...props}>
-      <PanelContent
-        results={results}
-        fetchData={() => {
-          emit(EVENTS.REQUEST);
-        }}
-        clearData={() => {
-          emit(EVENTS.CLEAR);
-        }}
+      <XStateInspectorPanel     
       />
     </AddonPanel>
   );

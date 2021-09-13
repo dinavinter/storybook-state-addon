@@ -5,7 +5,7 @@ import {TrafficLights} from "./Stepper";
 import {stepMachine} from "./step-machine";
 
 export default {
-  title: 'Example/TrafficLights',
+  title: 'Example/Stepper',
   component: TrafficLights,
   parameters:{
     machine:stepMachine,

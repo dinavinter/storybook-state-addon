@@ -38,9 +38,7 @@ export const PanelContent: React.FC<PanelContentProps> = ({
     >
       <Placeholder>
         <Fragment>
-          Addons can gather details about how a story is rendered. This is panel
-          uses a tab pattern. Click the button below to fetch data for the other
-          two tabs.
+       Test
         </Fragment>
         <Fragment>
           <RequestDataButton

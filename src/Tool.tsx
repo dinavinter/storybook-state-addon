@@ -18,7 +18,7 @@ export const Tool = () => {
     <IconButton
       key={TOOL_ID}
       active={xstate}
-      title="Enable xstate"
+      title="Enable xState"
       onClick={toggleMyTool}
     >
       {/*

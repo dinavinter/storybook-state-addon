@@ -2,7 +2,7 @@ import { StoryFn as StoryFunction, StoryContext } from "@storybook/addons";
 import { useEffect, useGlobals } from "@storybook/addons";
 
 export const withGlobals = (StoryFn: StoryFunction, context: StoryContext) => {
-  const [{ myAddon }] = useGlobals();
+  const [{ xstate }] = useGlobals();
   // Is the addon being used in the docs panel
   const isInDocs = context.viewMode === "docs";
 
@@ -14,10 +14,10 @@ export const withGlobals = (StoryFn: StoryFunction, context: StoryContext) => {
       : `#root`;
 
     displayToolState(selectorId, {
-      myAddon,
+      xstate,
       isInDocs,
     });
-  }, [myAddon]);
+  }, [xstate]);
 
   return StoryFn();
 };
@@ -37,7 +37,7 @@ function displayToolState(selector: string, state: any) {
   }
 
   preElement.innerText = `This snippet is injected by the withGlobals decorator.
-It updates as the user interacts with the ⚡ tool in the toolbar above.
+It updates as the user interacts with the ⚡ tool in the toolbar above xxxx.
 
 ${JSON.stringify(state, null, 2)}
 `;

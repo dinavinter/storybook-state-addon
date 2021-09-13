@@ -1,6 +1,6 @@
 import { assign, createMachine } from "xstate";
 import { useChannel } from "@storybook/api";
-import { EVENTS, INSPECT_ID } from "./constants";
+import { EVENTS, INSPECT_ID } from "../constants";
 import StorybookEvents from "@storybook/core-events";
 import { useMachine } from "@xstate/react";
 import * as React from "react";
